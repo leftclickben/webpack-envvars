@@ -14,7 +14,7 @@ The rest of the repo is a very simple web app that simply displays a message con
 2. Install dependencies: `npm install`
 3. Comment out one of the methods for including environment variables in `webpack.config.js` (and the relevant `require` statement)
 4. Run the server with the relevant environment variable set (see below)
-5. Visit http://localhost:8082/ to see the running application, you should see `some-value` in the printed message
+5. Visit http://localhost:8083/ to see the running application, you should see `some-value` in the printed message
 
 ## Setting environment variables
 
