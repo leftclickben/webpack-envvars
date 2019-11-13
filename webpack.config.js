@@ -61,7 +61,10 @@ module.exports = {
 
     // #3 This is the way with the least code, but also the least control.  It is restricted to values in your
     // build-time `.env` file, the location of which must be specified.  Actual environment variables (e.g. set within
-    // the pipeline or on a build machine) are not supported using this method, unlike the other two methods.
+    // the pipeline or on a build machine) are not supported using this method, unlike the other two methods.  This
+    // method can be used by having multiple `.env` files for different environments, e.g. `production.env`, `uat.env`,
+    // etc, and an build step that copies the relevant one to `.env`, or which uses logic in `webpack.config.js` to
+    // dynamically specify a file based on some argument.  This is similar to the approach used by Angular.
     //
     // new DotenvPlugin({ path: './.env', })
 
